@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
         />
+        <link rel="stylesheet" href="assets/css/subscription.css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script
             defer
@@ -20,7 +21,10 @@
             x-init="loadComponent('cookies/cookiesBar', $el);"
         ></div>
         <main class="">
-            <section></section>
+            <div
+                x-data="{}"
+                x-init="loadComponent('sections/subscription', $el);"
+            ></div>
         </main>
         <script src="assets/js/componentLoaderHelpers.js"></script>
         <script src="assets/js/globalVariables.js"></script>

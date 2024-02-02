@@ -6,14 +6,22 @@
                 " and third parties usecookies and similar technologies on this website to collect information about your browsing activities, which we use to analyse your use of the website, to personalise our services and to customise our online advertisements. When your consent is required, you can accept, refuse or personalise your choices. " +
                 APP_NAME +
                 " supports the Digital Advertising Alliance Principles. Learn more about our use of cookies and your information by selecting the 'Personalise my choices' option below.",
+            close() {
+                this.$refs.cookiesBar.classList.add("hidden");
+            },
         };
     };
 </script>
-<div x-data="cookiesBarData();" class="fixed w-full px-3 py-2 bg-gray-50">
+<div
+    x-data="cookiesBarData();"
+    x-ref="cookiesBar"
+    class="fixed w-full px-3 py-2 bg-gray-50 z-10"
+>
     <div class="flex flex-col gap-2">
         <div class="flex items-end gap-3 text-xs">
             <div x-text="cookiesText"></div>
             <button
+                @click="close();"
                 type="button"
                 class="font-bold text-black hover:text-gray-400"
             >

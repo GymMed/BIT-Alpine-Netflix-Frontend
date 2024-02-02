@@ -1,0 +1,33 @@
+<script>
+    window.subscriptionData = function () {
+        return {};
+    };
+</script>
+<section x-data="subscriptionData();" class="relative">
+    <div class="absolute -z-10">
+        <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/c46830d8-368e-4be2-a3c1-ff4b4c1671c0/LT-en-20240129-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+            alt="Background of section"
+        />
+        <div
+            class="subscription-bg absolute top-0 right-0 left-0 bottom-0 bg-opacity-40 bg-black"
+        ></div>
+    </div>
+    <div x-data="{}" x-init="loadComponent('header/header', $el);"></div>
+    <div class="subscription-section">
+        <div
+            class="h-full m-auto flex items-center justify-center subscription-main"
+        >
+            <div class="flex flex-col gap-3 text-gray-50 text-center">
+                <h1 class="font-bold text-5xl">
+                    Unlimited movies, TV shows, and more
+                </h1>
+                <p class="text-2xl">Watch anywhere. Cancel anytime.</p>
+                <h3 class="text-xl">
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
