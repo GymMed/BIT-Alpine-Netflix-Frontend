@@ -1,8 +1,8 @@
 ## Access Project Online
 
-This is BIT course task about creating data table component. This project was created by using Alpine js and tailwindcss.
+In this BIT course task I am creating Netflix frontend. This project was created by using [Alpine js](https://alpinejs.dev/) and [tailwindcss](https://tailwindcss.com/).
 
--   [View](https://gymmed.github.io/BIT-Alpine-Table-Example/)!
+-   [View](https://gymmed.github.io/BIT-Alpine-Netflix-Frontend/)!
 
 ## Component
 
