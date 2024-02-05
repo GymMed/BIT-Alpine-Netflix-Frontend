@@ -9,6 +9,18 @@ footer {
     margin-bottom: 2rem;
 }
 
+footer .app-name {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-line: underline;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
 @media screen and (min-width: 1280px) {
     footer {
         padding-left: 3rem;

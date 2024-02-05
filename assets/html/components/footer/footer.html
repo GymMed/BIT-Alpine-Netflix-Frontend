@@ -1,8 +1,13 @@
-<footer>
+<script>
+    window.footerData = function () {
+        return {};
+    };
+</script>
+<footer x-data="footerData();">
     <div class="wrapper flex flex-col text-gray-50">
         <div><a href="">Questions? Contact us.</a></div>
-        <div>
-            <ul class="footer-ul text-sm inline-flex">
+        <div class="my-3">
+            <ul class="footer-ul text-sm inline-flex flex-wrap">
                 <li><a href="">FAQ</a></li>
                 <li><a href="">Help Center</a></li>
                 <li><a href="">Account</a></li>
@@ -31,7 +36,10 @@
             </div>
         </div>
         <div>
-            <div class="text-sm mt-6">Netflix Lithuania</div>
+            <div
+                class="app-name text-sm mt-6"
+                x-text="APP_NAME + ' Lithuania'"
+            ></div>
         </div>
     </div>
 </footer>
