@@ -23,11 +23,12 @@
                     Unlimited movies, TV shows, and more
                 </h1>
                 <p class="text-2xl">Watch anywhere. Cancel anytime.</p>
-                <h3 class="text-xl">
-                    Ready to watch? Enter your email to create or restart your
-                    membership.
-                </h3>
+                <div
+                    x-data="{}"
+                    x-init="loadComponent('general/email-start', $el);"
+                ></div>
             </div>
         </div>
     </div>
+    <div x-data="{}" x-init="loadComponent('general/separator', $el);"></div>
 </section>

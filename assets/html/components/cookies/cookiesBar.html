@@ -16,6 +16,7 @@
     x-data="cookiesBarData();"
     x-ref="cookiesBar"
     class="fixed w-full px-3 py-2 bg-gray-50 z-10"
+    @close-cookies-bar.window="close"
 >
     <div class="flex flex-col gap-2">
         <div class="flex items-end gap-3 text-xs">
@@ -34,15 +35,15 @@
         <div class="flex gap-3">
             <div
                 x-data="{}"
-                x-init="loadComponent('cookies/cookiesButtonPersonalise', $el, { text: 'Personalise my choices' });"
+                x-init="loadComponent('cookies/cookiesButtonPersonalise', $el, { text: 'Personalise my choices', onclick: 'closeCookiesBar' });"
             ></div>
             <div
                 x-data="{}"
-                x-init="loadComponent('cookies/cookiesButton', $el, { text: 'Reject' });"
+                x-init="loadComponent('cookies/cookiesButton', $el, { text: 'Reject', onclick: 'closeCookiesBar' });"
             ></div>
             <div
                 x-data="{}"
-                x-init="loadComponent('cookies/cookiesButton', $el, { text: 'Accept' });"
+                x-init="loadComponent('cookies/cookiesButton', $el, { text: 'Accept', onclick: 'closeCookiesBar' });"
             ></div>
         </div>
     </div>

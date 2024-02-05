@@ -1,0 +1,38 @@
+<form action="" class="flex flex-col gap-3">
+    <h3 class="text-xl">
+        Ready to watch? Enter your email to create or restart your membership.
+    </h3>
+    <div class="flex justify-center gap-1">
+        <div
+            class="relative text-gray-50 focus:ring-2 focus:ring-gray-50 focus:ring-offset-2 rounded-sm"
+        >
+            <div
+                class="absolute w-full h-full pointer-events-none flex items-center px-4"
+            >
+                <label for="email">Email address</label>
+            </div>
+            <input
+                type="email"
+                autocomplete="email"
+                minlength="5"
+                maxlength="50"
+                name="email"
+                class="pt-6 px-4 bg-transparent pb-2"
+            />
+            <div
+                class="-z-10 border top-0 left-0 right-0 bottom-0 absolute rounded bg-opacity-70 bg-neutral-900 border-opacity-70 border-neutral-500"
+            ></div>
+        </div>
+        <button class="bg-red-600 rounded-sm hover:bg-red-700 text-gray-50">
+            <div class="flex gap-2 px-5">
+                <div class="font-semibold">Get Started</div>
+                <div>
+                    <div
+                        x-data="{}"
+                        x-init="loadComponent('general/icons/arrow-left', $el);"
+                    ></div>
+                </div>
+            </div>
+        </button>
+    </div>
+</form>
